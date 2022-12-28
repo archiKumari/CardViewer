@@ -47,7 +47,9 @@ function Card() {
             </button>
           </li>
         </ul>
-        <InputCard labels={months} visibility={inputCardVisibilty}/>
+        {
+          inputCardVisibilty? <InputCard labels={months}/> : <></>
+        }
       </div>
     </div>
   );
